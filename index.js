@@ -9,7 +9,6 @@ let newsAccordian = document.getElementById('newsAccordian');
 // create an ajax get request
 const xhr = new XMLHttpRequest();
 xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`, true);
-xhr.getResponseHeader('Content-type', 'text/plain');
 
 xhr.onload = function() {
     if (this.status === 200) {
